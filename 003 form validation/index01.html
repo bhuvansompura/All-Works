@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color: cadetblue;
+    }
+   form{
+        text-align: center;
+    }
+    label{
+        text-align: center;
+        background-color: violet;
+        color: black;
+
+    }
+    input{
+        /* border: 1cap; */
+        border-color: blue;
+    }
+    button{
+        color: white;
+        background-color: black;
+    }
+</style>
+<h1>
+    form
+</h1>
+<body>
+       
+
+    <script>
+         function formdata() {
+           var name = document.getElementById('name').value;
+           var email = document.getElementById('email').value;
+           var password = document.getElementById('password').value;
+           if (name=="" || email=="" || password=="") {
+            alert("All fields are mendatory");
+                   return false;
+           }else{
+            true;
+           }
+        }
+
+  
+    </script>
+
+        <form onsubmit="return formdata()" action="xyz.html">
+            <label for="Username">Full Name</label><br>
+            <input type="text" name="name" id="name"> <br>
+            
+            <label for="Useremail">Email</label><br>
+            <input type="email" name="email" id="email"><br> 
+            <label for="Userpassword">Password</label><br>
+            <input type="password" name="password" id="password"> <br><br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    
+    </body>
+</html>

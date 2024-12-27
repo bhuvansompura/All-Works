@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation form</title>
+</head>
+<h2>validation form</h2>
+<body>
+    <script>
+        function data() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var contact = document.getElementById('contact').value;
+            var password = document.getElementById('password').value;
+            var password2 = document.getElementById('password2').value;
+            if (name=="" || email=="" || password=="" || password2=="") {
+                alert("All Fiels are mandatory");
+                return false;
+            }else if (contact.length<10 || contact.length>10) {
+                alert("number should be 10 digits ! please enter valid number");
+                return false;
+            }else if (isNaN(contact)) {
+                alert("ony numbers are allowed ! please enter valid number");
+                return false;
+            }else if (password!=password2) {
+                alert("please enter a same password");
+                return false;
+            }
+            else{
+                true;
+            }
+
+            document.writeln("Your info: <br>"+"name:"+name+"<br>");
+            document.writeln("your email:"+email);
+            document.writeln("your contact:"+contact);
+            
+        }
+        
+    </script>
+
+    <form onsubmit="return data()" action="">
+
+        <div class="container">
+            <div class="row">
+       User Name : <input type="text" name="name" id="name"><br><br>
+      User Email:  <input type="email" name="email" id="email"><br><br>
+      User contact:  <input type="contact" name="contact" id="contact"><br><br>
+          Password : <input type="password" name="password" id="password"><br><br>
+ Confirm Password :  <input type="password" name="password" id="password2"><br><br>
+           <input type="submit" value="login">
+        </div>
+    </div>
+</form>
+</body>
+</html>
