@@ -1,89 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-        .nav {
-            width: 250px;
-            background-color: #2c3e50;
-            color: white;
+            display: flex;
             height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar .menu {
+            list-style: none;
             padding: 20px;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
         }
-        .nav h2 {
-            margin-top: 0;
+
+        .sidebar .menu li {
+            margin: 15px 0;
         }
-        .nav a {
-            display: block;
+
+        .sidebar .menu a {
             color: white;
             text-decoration: none;
-            margin: 15px 0;
+            display: block;
             padding: 10px;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-        .nav a:hover {
-            background-color: #34495e;
+
+        .sidebar .menu a:hover {
+            background-color: #575757;
         }
-        .main {
-            margin-left: 250px;
-            padding: 20px;
-            background-color: #ecf0f1;
-            min-height: 100vh;
+
+        .logout-btn {
+            margin: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-        .header {
+
+        .logout-btn:hover {
+            background-color: #45a049;
+        }
+
+        .content {
+            flex: 1;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex-direction: column;
+            overflow-y: auto;
         }
-        .dashboard {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .dashboard h1 {
-            margin-top: 0;
-        }
-        .card {
-            background-color: #3498db;
+
+        .header {
+            background-color: #4CAF50;
             color: white;
             padding: 20px;
-            border-radius: 10px;
-            margin: 10px;
-            display: inline-block;
-            width: 22%;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .card h3 {
-            margin: 0;
+
+        .dashboard {
+            padding: 20px;
+        }
+
+        .dashboard h2 {
+            margin-bottom: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1;
+            min-width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
-    <div class="nav">
-        <h2>Admin Panel</h2>
-        <a href="#dashboard">Dashboard</a>
-        <a href="#users">Users</a>
-        <a href="#settings">Settings</a>
-        <a href="#reports">Reports</a>
-        <a href="#logout">Logout</a>
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="adminpanel.php">Dashboard</a></li>
+            <li><a href="users.php">Users</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+        <!-- <button class="logout-btn" >Logout</button> -->
+        <a href="logout.php" class="logout-btn">Logout</a>
+        
+        <footer style="padding: 20px; text-align: center; background-color: #222;">
+            <p>&copy; 2025 Admin Panel</p>
+        </footer>
     </div>
+    <div class="content">
+        <div class="header">
+            <h1>Admin Panel</h1>
+        </div>
+        <div class="dashboard" id="dashboard">
+            <h2>Dashboard</h2>
+        </div>
+    </div>
+
 </body>
+
 </html>
