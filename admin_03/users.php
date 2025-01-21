@@ -151,6 +151,16 @@
                       
                       } 
                     ?>
+                <!-- <tr>
+                        <td></td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>Admin</td>
+                        <td class="actions">
+                            <button class="btn edit">Edit</button>
+                            <button class="btn delete">Delete</button>
+                        </td>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
