@@ -1,0 +1,189 @@
+/* Basic styles for the agriculture-themed website */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8f0;  /* Light greenish background */
+  color: #333;  /* Darker text for better readability */
+}
+
+/* Header styling */
+header {
+  background-color: #4CAF50;  /* Deep green for the header */
+  padding: 1em 0;
+  text-align: center;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #FFEB3B;  /* Bright yellow hover effect */
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #98FB98, #228B22);  /* Green gradient */
+  color: white;
+  text-align: center;
+  padding: 5em 0;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.4em;
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Featured Section */
+.featured {
+  background-color: #ffffff;  /* Clean white background */
+  text-align: center;
+  padding: 3em 0;
+}
+
+.featured h2 {
+  font-size: 2em;
+  color: #4CAF50;
+  margin-bottom: 1em;
+}
+
+.featured .images {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+.featured .images img {
+  width: 30%;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.featured .images img:hover {
+  transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #4CAF50;
+  padding: 2em 0;
+  text-align: center;
+  color: white;
+}
+
+footer h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+footer .social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .social-links li {
+  display: inline;
+  margin: 0 20px;
+}
+
+footer .social-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+footer .social-links li a:hover {
+  color: #FFEB3B;
+}
+
+/* Contact & Forms Styling */
+.contact form {
+  max-width: 600px;
+  margin: 2em auto;
+  background-color: #e8f5e9;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact form button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: #388E3C;  /* Darker green on hover */
+}
+
+/* Registration/Login Form */
+form {
+  max-width: 500px;
+  margin: 3em auto;
+  background-color: #f0f8f0;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #388E3C;  /* Darker green */
+}
