@@ -221,7 +221,7 @@ footer .social-links li a:hover {
   <section class="register">
     <div class="register-container">
       <div class="register-image">
-        <img src="images/pic-2.jpeg" alt="Agriculture Image" />
+        <img src="img/pic-2.jpeg" alt="Agriculture Image" />
       </div>
       <div class="register-form">
         <h2>Create a New Account</h2>

@@ -79,7 +79,7 @@
 
     <!-- Main content -->
     <div class="content">
-        <h2>Farm Data</h2>
+        <h2>Registered Data</h2>
         <p>Manage and view farm data such as crop details, growth stages, and more.</p>
 
         <!-- Crop Details Table -->

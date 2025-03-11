@@ -64,13 +64,13 @@
     <!-- Sidebar -->
     <div id="sidebar">
         <h3 class="text-center">Agriculture Admin</h3>
-        <a href="dashboard.html" id="dashboard">Dashboard</a>
-        <a href="farm-data.html" id="farm-data">Farm Data</a>
-        <a href="equipment.html" id="equipment">Equipment</a>
-        <a href="staff.html" id="staff">Staff</a>
+        <a href="admindashboard.php" id="dashboard">Dashboard</a>
+        <a href="farmdata.php" id="farm-data">Farm Data</a>
+        <a href="equipment.php" id="equipment">Equipment</a>
+        <a href="staff.php" id="staff">Staff</a>
         <a href="reports.html" id="reports">Reports</a>
-        <a href="settings.html" id="settings">Settings</a>
-        <a href="logout.html" id="logout">Logout</a>
+        <a href="adminsetting.php" id="settings">Settings</a>
+        <a href="logout.php" id="logout">Logout</a>
     </div>
 
     <!-- Main content -->
@@ -84,7 +84,7 @@
                 <i class="fas fa-user-plus"></i> New Staff Form
             </div>
             <div class="card-body">
-                <form action="/submit-staff" method="POST">
+                <form  method="POST">
                     <div class="mb-3">
                         <label for="staff-name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="staff-name" name="staff_name" placeholder="Enter staff name" required>

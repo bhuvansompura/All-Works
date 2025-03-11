@@ -73,12 +73,12 @@
     <!-- Sidebar -->
     <div id="sidebar">
         <h3 class="text-center">Agriculture Admin</h3>
-        <a href="dashboard.html" id="dashboard">Dashboard</a>
-        <a href="farm-data.html" id="farm-data">Farm Data</a>
-        <a href="equipment.html" id="equipment">Equipment</a>
-        <a href="staff.html" id="staff">Staff</a>
+        <a href="dashboard.php id="dashboard">Dashboard</a>
+        <a href="farmdata.php" id="farm-data">Farm Data</a>
+        <a href="equipment.php" id="equipment">Equipment</a>
+        <a href="staff.php" id="staff">Staff</a>
         <a href="reports.html" id="reports">Reports</a>
-        <a href="settings.html" id="settings">Settings</a>
+        <a href="adminsetting.php" id="settings">Settings</a>
         <a href="logout.html" id="logout">Logout</a>
     </div>
 
